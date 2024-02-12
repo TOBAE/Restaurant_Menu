@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <main>
+        <nav class="nav_slider">
+            
+            <div class="logo">
+                <h2>Logo</h2>
+             </div>
+             
+            
+
+
+            <div class="nav_items">
+                <ul>
+                    <li><a href="#" class="nav_link">Home</a></li>
+                    <li><a href="#menu" class="nav_link">Menu</a></li>
+                    <li><a href="#restaurant_info" class="nav_link">Contact</a></li>
+                </ul>
+
+                <div id="cart-info" class="cart-info">
+                    <span class="cart-info__icon"><i class="fas fa-shopping-cart"></i></span>
+                    <p><span id="item-count">0</span> items - &#8358; <span class="item-total">0</span></p>
+                </div>
+
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+            </div>
+            
+            <div class="barDiv">
+                <i class="fas fa-bars bar" onclick="openMenu()"></i>
+            </div>
+        </nav>
+
+        <section id="main_section">
+            <div class="main_text">
+                <h1 class="title_text">Tobae Restaurant</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora pariatur quis eius. Reprehenderit ratione quasi suscipit nemo hic. Asperiores laborum error consectetur quaerat amet quisquam. Magnam libero illo labore fuga.</p>
+            </div>
+        </section>
+
+        <!-- CART -->
+        <div id="cart" class="cart">
+          <div class="cart-contents"></div>
+        
+          <!-- cart total -->
+          <div class="cart-total">
+            <h5>total</h5>
+            <h5> &#8358; <strong class="cart-total-price">0</strong> </h5>
+          </div>
+       
+          <!-- cart buttons -->
+          <div class="cart-buttons">
+            <a href="#" id="clear-cart" class="clear-cart">clear cart</a>
+            <a href="#" class="checkout">checkout</a>
+          </div>
+          
+        </div>
+
+        <section id="menu">
+            <h2 class="menu-title">Menu</h2>
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tabHeader active-tab" data-tab="1">Sushi</button>
+                    <button class="tabHeader" data-tab="2">Drinks</button>
+                    <button class="tabHeader" data-tab="3">Appetizers</button>
+                    <button class="tabHeader" data-tab="4">Canapés</button>
+                    <button class="tabHeader" data-tab="5">Wine</button>
+                </div>
+
+                <div id="tabSection-1" class="tabSection show-tab">
+                    <div class="tabFlexSection">
+                        <div class="menu_container" >    
+                            <div class="image">
+                                <img src="./images/am_porridge.jpg"  class="menu-img" alt="" >
+                            </div>
+                            <p class="menuFood">Yam Porridge</p>
+                            <div class="menu-price">
+                                <span class="price">&#8358; 1500</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container"  >
+                            <div class="image">
+                                <img src="./images/ofada.jpg" alt="" class="menu-img" >
+                            </div>
+                            <p class="menuFood">Ofada Rice</p>
+                            <div class="menu-price">
+                                <span class="price">&#8358; 800</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container">
+                            <div class="image">
+                                <img src="./images/egusi.jpg" alt="" class="menu-img" >
+                            </div>
+                            <p class="menuFood">Egusi Soup</p>
+                            <div class="menu-price">
+                                <span class="price">&#8358; 1000</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container">
+                            <div class="image">
+                                <img src="./images/jellof_rice.jpg"  class="menu-img" alt="">
+                            </div>
+                            <p class="menuFood">Jellof Rice</p>
+                            <div class="menu-price">
+                                <span class="price">&#8358; 500</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div id="tabSection-2" class="tabSection hide-tab">
+                    <div class="tabFlexSection">
+                        <div class="menu_container" >    
+                            <div class="image">
+                                <img src="./images/am_porridge.jpg"  class="menu-img" alt="" >
+                            </div>
+                            <p class="menuFood">Spicy Tuna</p>
+                            <div class="menu-price">
+                                <span class="price">$10.00</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container"  >
+                            <div class="image">
+                                <img src="./images/ofada.jpg" alt="" class="menu-img" >
+                            </div>
+                            <p class="menuFood">YellowTail</p>
+                            <div class="menu-price">
+                                <span class="price">$9.00</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container">
+                            <div class="image">
+                                <img src="./images/egusi.jpg" alt="" class="menu-img" >
+                            </div>
+                            <p class="menuFood">California Roll</p>
+                            <div class="menu-price">
+                                <span class="price">$7.00</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container">
+                            <div class="image">
+                                <img src="./images/jellof_rice.jpg"  class="menu-img" alt="">
+                            </div>
+                            <p class="menuFood">Spicy Salmon</p>
+                            <div class="menu-price">
+                                <span class="price">$5.00</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div id="tabSection-3" class="tabSection hide-tab">
+                    <div class="tabFlexSection">
+                        <div class="menu_container" >    
+                            <div class="image">
+                                <img src="./images/fruit_salad.jpg"  class="menu-img" alt="" >
+                            </div>
+                            <p class="menuFood">Fruit Salad</p>
+                            <div class="menu-price">
+                                <span class="price">&#8358; 500</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container"  >
+                            <div class="image">
+                                <img src="./images/chips.jpg" alt="" class="menu-img" >
+                            </div>
+                            <p class="menuFood">French fries</p>
+                            <div class="menu-price">
+                                <span class="price">&#8358; 800</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container">
+                            <div class="image">
+                                <img src="./images/egusi.jpg" alt="" class="menu-img" >
+                            </div>
+                            <p class="menuFood">California Roll</p>
+                            <div class="menu-price">
+                                <span class="price">$7.00</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container">
+                            <div class="image">
+                                <img src="./images/jellof_rice.jpg"  class="menu-img" alt="">
+                            </div>
+                            <p class="menuFood">Spicy Salmon</p>
+                            <div class="menu-price">
+                                <span class="price">$5.00</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div id="tabSection-4" class="tabSection hide-tab">
+                    <div class="tabFlexSection">
+                        <div class="menu_container" >    
+                            <div class="image">
+                                <img src="./images/canape_carrot_cheese.jpg"  class="menu-img" alt="" >
+                            </div>
+                            <p class="menuFood">Carrot & Cheese</p>
+                            <div class="menu-price">
+                                <span class="price">&#8358; 300</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container"  >
+                            <div class="image">
+                                <img src="./images/samon_mousse.jpg" alt="" class="menu-img" >
+                            </div>
+                            <p class="menuFood">Salmon Mousse</p>
+                            <div class="menu-price">
+                                <span class="price">&#8358; 250</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container">
+                            <div class="image">
+                                <img src="./images/hot_mushroom.jpg" alt="" class="menu-img" >
+                            </div>
+                            <p class="menuFood">Hot Mushroom</p>
+                            <div class="menu-price">
+                                <span class="price">&#8358; 350</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container">
+                            <div class="image">
+                                <img src="./images/smoked_tuna.jpg"  class="menu-img" alt="">
+                            </div>
+                            <p class="menuFood">Smoked Tuna</p>
+                            <div class="menu-price">
+                                <span class="price">&#8358; 150</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div id="tabSection-5" class="tabSection hide-tab">
+                    <div class="tabFlexSection">
+                        <div class="menu_container" >    
+                            <div class="image">
+                                <img src="images/torres_brandy.jpg"  class="menu-img" alt="" >
+                            </div>
+                            <p class="menuFood">Torres Brandy</p>
+                            <div class="menu-price">
+                                <span class="price">$10.00</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container"  >
+                            <div class="image">
+                                <img src="./images/torres.jpg" alt="" class="menu-img" >
+                            </div>
+                            <p class="menuFood">Torres</p>
+                            <div class="menu-price">
+                                <span class="price">$9.00</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container">
+                            <div class="image">
+                                <img src="./images/moet.jpg" alt="" class="menu-img" >
+                            </div>
+                            <p class="menuFood">Moet</p>
+                            <div class="menu-price">
+                                <span class="price">$7.00</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+    
+                        <div class="menu_container">
+                            <div class="image">
+                                <img src="./images/chamdor.jpg"  class="menu-img" alt="">
+                            </div>
+                            <p class="menuFood">Chamdor</p>
+                            <div class="menu-price">
+                                <span class="price">$5.00</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+
+                            
+                        <div class="menu_container">
+                            <div class="image">
+                                <img src="./images/chamdor2.jpg"  class="menu-img" alt="">
+                            </div>
+                            <p class="menuFood">Chamdor (White)</p>
+                            <div class="menu-price">
+                                <span class="price">$5.00</span>
+                                <button class ='order_btn'>Order</button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_text">
+            <h1>contact us</h1>
+            <h3><span>No</span> 32 Agejunle Street, Mainland, Lagos</h3>
+            <p>foodstuff@gmail.com</p>
+            <p>+234 568 5654 638</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
